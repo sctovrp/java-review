@@ -1,0 +1,12 @@
+version: '2.4'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: skilltest
+      POSTGRES_DB: testdb
+    ports:
+      - "5442:5432"
